@@ -169,3 +169,18 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Reference genome file
+reference/
+*.fa
+*.fasta
+*.fai
+*.amb
+*.ann
+*.bwt
+*.pac
+*.sa
+
+# Index files
+*.bai
+*.idx
