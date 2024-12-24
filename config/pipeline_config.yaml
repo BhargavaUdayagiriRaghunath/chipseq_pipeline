@@ -1,4 +1,4 @@
-genome_index: /path/to/genome/index
+genome_index: reference/Homo_sapiens.GRCh38.dna.primary_assembly.fa
 macs2_params:
   q_value: 0.05
   genome_size: hs
