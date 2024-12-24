@@ -184,3 +184,6 @@ reference/
 # Index files
 *.bai
 *.idx
+
+# Output
+output_dir/
