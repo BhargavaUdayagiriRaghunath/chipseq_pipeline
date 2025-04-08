@@ -1,7 +1,32 @@
+# Main configuration
 genome_index: reference/Homo_sapiens.GRCh38.dna.primary_assembly.fa
+
+# Download parameters
+encode:
+  max_downloads: 8
+  file_types:
+    - fastq
+  assemblies:
+    - GRCh38
+
+# Quality control parameters
+qc:
+  fastqc_threads: 8
+  multiqc_enabled: true
+
+# Alignment parameters
+alignment:
+  bwa_threads: 8
+  samtools_threads: 8
+
+# Peak calling parameters
 macs2_params:
   q_value: 0.05
   genome_size: hs
+  format: BAM
+
+# Visualization parameters
 visualization:
   bin_size: 10
   normalize: RPKM
+  output_format: bigwig
